@@ -26,7 +26,7 @@ const SETTING_ITEMS = [
   }
 ]
 
-const DropdownList = () => {
+const DropdownList = (props) => {
   const [settingItems, setSettingItems] = useState(SETTING_ITEMS);
   const [activeElement, setActiveElement] = useState('sI1');
 
@@ -36,7 +36,7 @@ const DropdownList = () => {
   }
 
   return (
-    <ul className={classes.menu}>
+    <ul className={classes.menu} style={props.style}>
       {settingItems.map(item =>
         <DropdownListItem
           activeElement={activeElement}

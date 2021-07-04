@@ -11,7 +11,7 @@
     background-color: #fff;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     animation-duration: 1s;
-    animation-name: hiddenShow;
+    animation-name: show;
 }
 
 .menu::before {
@@ -36,7 +36,7 @@
     border-color:  transparent transparent white transparent ;
 }
 
-@keyframes hiddenShow {
+@keyframes show {
     from {
         opacity: 0;
     }
@@ -45,23 +45,5 @@
         opacity: 1;
     }
 }
-/*.container__arrow {*/
-/*    !* Size *!*/
-/*    height: 16px;*/
-/*    width: 16px;*/
 
-/*    background-color: #FFF;*/
-/*    position: absolute;*/
-/*}*/
-
-/*.container__arrow--tl {*/
-/*    !* Position at the top left corner *!*/
-/*    left: 32px;*/
-/*    top: 0px;*/
-
-/*    !* Border *!*/
-/*    border-left: 1px solid rgba(0, 0, 0, 0.3);*/
-/*    border-top: 1px solid rgba(0, 0, 0, 0.3);*/
-/*    transform: translate(50%, -50%) rotate(45deg);*/
-/*}*/
 
